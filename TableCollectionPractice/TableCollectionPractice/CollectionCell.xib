@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCellID" id="gTV-IL-0wX" customClass="CollectionCell" customModule="TableCollectionPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="113"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BHV-oP-chO">
+                        <rect key="frame" x="0.0" y="0.0" width="127" height="113"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20C-Xo-bNy">
+                        <rect key="frame" x="59" y="53" width="68" height="60"/>
+                        <state key="normal" title="Button" image="heart2"/>
+                        <state key="selected" image="heart1"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="20C-Xo-bNy" firstAttribute="leading" secondItem="BHV-oP-chO" secondAttribute="leading" constant="59" id="DtQ-Kg-2WX"/>
+                <constraint firstItem="BHV-oP-chO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Efm-SA-s0r"/>
+                <constraint firstItem="20C-Xo-bNy" firstAttribute="trailing" secondItem="BHV-oP-chO" secondAttribute="trailing" id="LW3-IP-PHU"/>
+                <constraint firstItem="BHV-oP-chO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qar-vV-xSt"/>
+                <constraint firstItem="20C-Xo-bNy" firstAttribute="bottom" secondItem="BHV-oP-chO" secondAttribute="bottom" id="ZKU-Mh-uMR"/>
+                <constraint firstItem="20C-Xo-bNy" firstAttribute="top" secondItem="BHV-oP-chO" secondAttribute="top" constant="53" id="Zjn-Tg-Kci"/>
+                <constraint firstAttribute="trailing" secondItem="BHV-oP-chO" secondAttribute="trailing" id="jto-jA-UkL"/>
+                <constraint firstAttribute="bottom" secondItem="BHV-oP-chO" secondAttribute="bottom" id="pjp-SL-ur0"/>
+            </constraints>
+            <size key="customSize" width="127" height="113"/>
+            <connections>
+                <outlet property="cellImage" destination="BHV-oP-chO" id="9L1-nL-V7h"/>
+                <outlet property="favouriteButton" destination="20C-Xo-bNy" id="fku-WQ-qxK"/>
+            </connections>
+            <point key="canvasLocation" x="-19.5" y="-132.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="heart1" width="430" height="424"/>
+        <image name="heart2" width="500" height="355"/>
+    </resources>
+</document>

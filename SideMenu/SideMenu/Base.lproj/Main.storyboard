@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SlideVC-->
+        <scene sceneID="L9j-Bg-QAG">
+            <objects>
+                <viewController storyboardIdentifier="SlideVCID" id="2bf-AD-mdL" customClass="SlideVC" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yMv-rf-XRd"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Uh-q3-fjZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xXf-Bb-dPR">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EoF-i7-6dz">
+                                <rect key="frame" x="0.0" y="28" width="200" height="572"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SlideCellID" textLabel="ySz-Oc-jDO" style="IBUITableViewCellStyleDefault" id="HGc-5h-imQ" customClass="SlideCell" customModule="SideMenu" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="200" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HGc-5h-imQ" id="GDw-8C-f73">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ySz-Oc-jDO">
+                                                    <rect key="frame" x="15" y="0.0" width="170" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="SlideCellID"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Uh-q3-fjZ" firstAttribute="top" secondItem="EoF-i7-6dz" secondAttribute="bottom" id="DwH-O7-cFA"/>
+                            <constraint firstItem="EoF-i7-6dz" firstAttribute="leading" secondItem="xXf-Bb-dPR" secondAttribute="leadingMargin" constant="-16" id="dyg-tz-rur"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EoF-i7-6dz" secondAttribute="trailing" constant="-16" id="fa5-Ad-h3K"/>
+                            <constraint firstItem="EoF-i7-6dz" firstAttribute="top" secondItem="yMv-rf-XRd" secondAttribute="bottom" constant="8" id="pWK-kM-oRf"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="600"/>
+                    <connections>
+                        <outlet property="slideTableView" destination="EoF-i7-6dz" id="AuF-Ch-OBh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s9I-yX-68n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-923.20000000000005" y="132.23388305847078"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainVCID" id="BYZ-38-t0r" customClass="MainVC" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dVE-o2-Fdl">
+                                <rect key="frame" x="0.0" y="141" width="375" height="518"/>
+                                <connections>
+                                    <segue destination="lPL-qD-Zy2" kind="embed" id="wSd-yA-xyU"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5B-BT-40U">
+                                <rect key="frame" x="15" y="44" width="93" height="41"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="side menu">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="slidemenuButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cvs-PB-X9T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dVE-o2-Fdl" secondAttribute="trailing" constant="-16" id="3kd-2M-rfM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dVE-o2-Fdl" secondAttribute="bottom" constant="8" id="BlK-Wf-5Pl"/>
+                            <constraint firstItem="g5B-BT-40U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="PCs-wP-Rk7"/>
+                            <constraint firstItem="dVE-o2-Fdl" firstAttribute="top" secondItem="g5B-BT-40U" secondAttribute="bottom" constant="56" id="Xtb-v6-kSE"/>
+                            <constraint firstItem="g5B-BT-40U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="dJI-Vb-x0N"/>
+                            <constraint firstItem="dVE-o2-Fdl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="jwe-2v-DEQ"/>
+                            <constraint firstItem="dVE-o2-Fdl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="121" id="piE-6I-ux8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g5B-BT-40U" secondAttribute="trailing" constant="251" id="qNv-ku-ca3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slidemenuButton" destination="g5B-BT-40U" id="BD8-uQ-afm"/>
+                        <outlet property="visibleContainerView" destination="dVE-o2-Fdl" id="h0F-u3-4q8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="132.68365817091455"/>
+        </scene>
+        <!--RedVC-->
+        <scene sceneID="R3j-yr-o9D">
+            <objects>
+                <viewController storyboardIdentifier="RedVCID" id="MxG-b7-3tr" customClass="RedVC" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K2g-gd-m9L"/>
+                        <viewControllerLayoutGuide type="bottom" id="TRI-4F-gjg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PcV-SB-gcf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="518"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="518"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bv3-Nb-Dqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="475"/>
+        </scene>
+        <!--YellowVC-->
+        <scene sceneID="Siu-GE-bC6">
+            <objects>
+                <viewController storyboardIdentifier="YellowVCID" id="3bM-Cx-DDY" customClass="YellowVC" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ycZ-sU-nQF"/>
+                        <viewControllerLayoutGuide type="bottom" id="umN-lo-pD8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cgX-Ob-uYR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="518"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="518"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUH-Tt-wcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1533" y="509"/>
+        </scene>
+        <!--GreenVC-->
+        <scene sceneID="YyX-7q-uE7">
+            <objects>
+                <viewController storyboardIdentifier="GreenVCID" id="30v-6x-ehH" customClass="GreenVC" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mkr-h4-lKp"/>
+                        <viewControllerLayoutGuide type="bottom" id="nzR-iP-2FB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e5O-IP-7ay">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="518"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="518"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ESY-Gq-e1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2077" y="30"/>
+        </scene>
+        <!--BlackVC-->
+        <scene sceneID="ZGk-LO-TVB">
+            <objects>
+                <viewController storyboardIdentifier="BlackVCID" id="kM9-WC-XfW" customClass="BlackVC" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5hV-Rw-DF3"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZNR-WZ-GEl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1gh-cN-pyG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="518"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="518"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBh-u1-wab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2219" y="524"/>
+        </scene>
+        <!--BlueVC-->
+        <scene sceneID="gmj-r1-p1G">
+            <objects>
+                <viewController storyboardIdentifier="BlueVCID" id="FRa-X6-MqN" customClass="BlueVC" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zih-lL-nGe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="518"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="518"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ge-wT-nqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="-202"/>
+        </scene>
+        <!--VisibleVC-->
+        <scene sceneID="ObE-lV-qeI">
+            <objects>
+                <viewController storyboardIdentifier="VisibleVCID" id="lPL-qD-Zy2" customClass="VisibleVC" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4cq-vj-ubP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="518"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEr-7E-sG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="-157"/>
+        </scene>
+    </scenes>
+</document>
