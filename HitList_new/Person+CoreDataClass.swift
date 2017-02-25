@@ -2,7 +2,7 @@
 //  Person+CoreDataClass.swift
 //  HitList
 //
-//  Created by Gurdeep on 24/02/17.
+//  Created by Rajat Dhasmana on 25/02/17.
 //  Copyright © 2017 Razeware. All rights reserved.
 //
 
