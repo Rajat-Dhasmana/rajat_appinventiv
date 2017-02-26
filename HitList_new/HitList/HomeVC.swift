@@ -92,7 +92,6 @@ extension HomeVC: UITableViewDataSource , UITableViewDelegate {
     
           let editViewController = self.storyboard?.instantiateViewController(withIdentifier: "AddVCID") as! AddVC
           editViewController.selectedmode = .view
-         // editViewController.selectedIndex = indexPath
           editViewController.selectedperson = people[indexPath.row]
           self.navigationController?.pushViewController(editViewController, animated: true)
     

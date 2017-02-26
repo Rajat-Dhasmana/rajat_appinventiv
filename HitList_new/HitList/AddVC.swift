@@ -43,6 +43,7 @@ class AddVC: UIViewController {
         if self.selectedmode == .view {
             
             saveButton.isHidden = true
+            editButton.isHidden = false
             
         }
         addTableView.dataSource = self
@@ -57,10 +58,11 @@ class AddVC: UIViewController {
       
         if selectedmode == .add {
             self.screenLabel.text = "ADD"
+            editButton.isHidden = true
         }
             
             else {
-                self.screenLabel.text = "Profile"
+                self.screenLabel.text = "PEOFILE"
             
             addTableView.isUserInteractionEnabled = false
                 
@@ -68,8 +70,6 @@ class AddVC: UIViewController {
             
 }
     
-  
-  
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -77,11 +77,9 @@ class AddVC: UIViewController {
     }
     
 
-    
+//MARK: Save Button Tapped
+  
     @IBAction func saveButtonTapped(_ sender: UIButton) {
-      
-
-      
       
       if selectedmode == .add {
       
@@ -126,11 +124,10 @@ class AddVC: UIViewController {
       do {
         try managedContext.save()
         
-          let homecontroller = self.storyboard?.instantiateViewController(withIdentifier: "HomeVCID") as! HomeVC
-        homecontroller.people.append(person)
+       //   let homecontroller = self.storyboard?.instantiateViewController(withIdentifier: "HomeVCID") as! HomeVC
+       // homecontroller.people.append(person)
         self.navigationController?.popViewController(animated: true)
         
-        //people.append(person)
         
           } catch let error as NSError {
         
@@ -196,8 +193,6 @@ class AddVC: UIViewController {
             return
           }
           
-          let managedContext = appDelegate.persistentContainer.viewContext
-          
           
           for indices in index.indices {
             
@@ -222,8 +217,6 @@ class AddVC: UIViewController {
           
           appDelegate.saveContext()
           
-
-          
           
         addTableView.isUserInteractionEnabled = false
         selectedmode = .view
@@ -236,15 +229,11 @@ class AddVC: UIViewController {
             selectedmode = .edit
             addTableView.isUserInteractionEnabled = true
             //addTableView.reloadData()
-
           
-            
         }
-        
         
     
     }
-
 
 
 }
@@ -290,7 +279,6 @@ extension AddVC : UITableViewDataSource , UITableViewDelegate {
     
     else {
       
-
       
       switch indexPath.row {
         
@@ -311,7 +299,6 @@ extension AddVC : UITableViewDataSource , UITableViewDelegate {
       }
       
 
-      
     }
     
         
