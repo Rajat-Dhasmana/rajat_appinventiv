@@ -12,6 +12,10 @@ import FBSDKCoreKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,8 +29,8 @@ class ViewController: UIViewController {
             print("LOGGED IN")
         }
         
-        var loginButton = FBSDKLoginButton()
-        loginButton.readPermissions = ["public_profile" , "email" , "user_friends"]
+         self.loginButton = FBSDKLoginButton()
+        self.loginButton.readPermissions = ["public_profile" , "email" , "user_friends"]
         loginButton.center = self.view.center
         loginButton.delegate = self
         self.view.addSubview(loginButton)

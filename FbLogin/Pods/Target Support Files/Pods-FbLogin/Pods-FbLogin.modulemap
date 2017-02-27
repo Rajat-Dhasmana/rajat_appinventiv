@@ -1,0 +1,6 @@
+framework module Pods_FbLogin {
+  umbrella header "Pods-FbLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}
