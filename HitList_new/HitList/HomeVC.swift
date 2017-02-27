@@ -2,6 +2,7 @@
 import UIKit
 import CoreData
 
+
 class HomeVC: UIViewController {
 
   
@@ -111,6 +112,7 @@ extension HomeVC: UITableViewDataSource , UITableViewDelegate {
     
     switch editingStyle {
       case .delete:
+        
           let person = people[indexPath.row]
           managedContext.delete(person)
         
