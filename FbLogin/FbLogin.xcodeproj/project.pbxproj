@@ -14,6 +14,7 @@
 		D604235A1E640B1B00F1FA7F /* FbLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D60423581E640B1B00F1FA7F /* FbLogin.xcdatamodeld */; };
 		D604235C1E640B1B00F1FA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D604235B1E640B1B00F1FA7F /* Assets.xcassets */; };
 		D604235F1E640B1B00F1FA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D604235D1E640B1B00F1FA7F /* LaunchScreen.storyboard */; };
+		D6CB31011E6541FC000BD880 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6CB31001E6541FC000BD880 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D604235B1E640B1B00F1FA7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D604235E1E640B1B00F1FA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D60423601E640B1B00F1FA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CB31001E6541FC000BD880 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				D604235B1E640B1B00F1FA7F /* Assets.xcassets */,
 				D604235D1E640B1B00F1FA7F /* LaunchScreen.storyboard */,
 				D60423601E640B1B00F1FA7F /* Info.plist */,
+				D6CB31001E6541FC000BD880 /* GoogleService-Info.plist */,
 				D60423581E640B1B00F1FA7F /* FbLogin.xcdatamodeld */,
 			);
 			path = FbLogin;
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D604235F1E640B1B00F1FA7F /* LaunchScreen.storyboard in Resources */,
+				D6CB31011E6541FC000BD880 /* GoogleService-Info.plist in Resources */,
 				D604235C1E640B1B00F1FA7F /* Assets.xcassets in Resources */,
 				D60423571E640B1B00F1FA7F /* Main.storyboard in Resources */,
 			);

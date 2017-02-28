@@ -13,7 +13,6 @@ import FBSDKCoreKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var loginButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -29,8 +28,8 @@ class ViewController: UIViewController {
             print("LOGGED IN")
         }
         
-         self.loginButton = FBSDKLoginButton()
-        self.loginButton.readPermissions = ["public_profile" , "email" , "user_friends"]
+         let loginButton = FBSDKLoginButton()
+        loginButton.readPermissions = ["public_profile" , "email" , "user_friends"]
         loginButton.center = self.view.center
         loginButton.delegate = self
         self.view.addSubview(loginButton)
@@ -59,7 +58,6 @@ extension ViewController : FBSDKLoginButtonDelegate {
         else {
             print(error.localizedDescription)
         }
-        
         
         
     }

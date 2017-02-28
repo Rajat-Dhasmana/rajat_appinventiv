@@ -9,5 +9,6 @@ target 'FbLogin' do
 	pod ‘FBSDKCoreKit’
 	pod ‘FBSDKShareKit’
 	pod ‘FBSDKLoginKit’
-
+	pod ‘Google/SignIn’
+        pod ‘GoogleSignIn’
 end
